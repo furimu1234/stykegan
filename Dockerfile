@@ -16,12 +16,15 @@ RUN apt-get install less
 RUN pip install -U pip setuptools
 
 COPY ./requirements.txt /project
-COPY ./karras2019stylegan-ffhq-1024x1024.pkl /project
 COPY ./dnnlib /project
 COPY ./metrics /project
 COPY ./training /project
 COPY ./config.py /project
 COPY ./ic.py /project
+
+WORKDIR /project
+
+RUN curl -L "https://drive.google.com/uc?id=1MEGjdvVpUsu1jB4zrXZN7Y4kBBOzizDQ" -o data.pkl
 
 
 RUN pip install -r requirements.txt
