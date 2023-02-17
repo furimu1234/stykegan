@@ -16,9 +16,9 @@ RUN apt-get install less
 RUN pip install -U pip setuptools
 
 COPY ./requirements.txt /project
-COPY ./dnnlib /project
-COPY ./metrics /project
-COPY ./training /project
+COPY ./dnnlib/ /project
+COPY ./metrics/ /project
+COPY ./training/ /project
 COPY ./config.py /project
 COPY ./ic.py /project
 
