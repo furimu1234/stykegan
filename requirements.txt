@@ -1,0 +1,8 @@
+pillow
+numpy==1.19.4
+transformers scipy
+huggingface_hub
+https://developer.download.nvidia.com/compute/redist/jp/v46/tensorflow/tensorflow-1.15.5+nv21.7-cp36-cp36m-linux_aarch64.whl
+Cython
+torch==1.12.1+cu102 torchvision==0.13.1+cu102 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu102
+colorama
